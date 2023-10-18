@@ -1,0 +1,47 @@
+<html>
+    <head>    
+        <title>palindrome tester</title>
+        <script type="text/javascript">
+        var num;
+        var reNum;
+        var msg = 'It is a Palindrome';
+
+        num= isfiveNum();
+
+        function isfiveNum(){
+            num = window.prompt("Enter you number");
+            if (num.length !=5){
+                window.alert("your number is not 5 digits long")
+                isfiveNum()
+            }
+            return num;
+        }
+
+
+        function Isplindrom(num){
+        for(var i = 0 ; i < num.length/2 ; i++){
+            if(num[i] != num[len - 1 - i]){
+                msg = 'It is not a Palindrome';
+            }
+        }
+        document.write(msg)
+    }
+
+    Isplindrom(num);
+
+
+         
+
+ 
+
+
+
+
+
+
+
+        
+        </script> 
+    </head>
+
+</html>
